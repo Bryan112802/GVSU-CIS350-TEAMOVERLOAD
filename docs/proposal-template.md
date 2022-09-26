@@ -10,8 +10,9 @@ What is progressive overload? Progressive overload is gradually increasing the i
 
 # Anticipated Technologies
 
-(What technologies are needed to build this project)
-Github, PC/Laptops, IntelliJ
+* Github 
+* PC/Laptops 
+* IntelliJ
 
 # Method/Approach
 
