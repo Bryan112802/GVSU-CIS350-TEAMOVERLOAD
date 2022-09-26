@@ -4,7 +4,9 @@ Team members: Bryan Soriano, Juan Hernandez
 
 # Introduction
 
-(In 2-4 paragraphs, describe your project concept)
+Our project aims to be a fitness tracker for weightlifting to help you track and progress in your lifts. You will be able to track your workouts by logging the exercise you did, how many sets and reps, and how much weight you did for each set. Once you complete a workout (this is all the exercises you did in one session), you will be able to see a summary of your workout in a nice and clean format. Furthermore, having a history of your previous workout will allow you to progressive overload which is the main reason for having such a project.
+
+What is progressive overload? Progressive overload is gradually increasing the intensity or difficulty of workouts over time in order to build muscle and strength. In simpler terms, you want to do more weight than your previous session for all exercises as this is one of the most important things when it comes to building muscle and strength. Since this project involves logging each exercise each workout, you will be able to progressive overload as you know how much weight you did last time.
 
 # Anticipated Technologies
 
