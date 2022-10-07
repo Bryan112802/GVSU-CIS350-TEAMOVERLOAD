@@ -13,7 +13,8 @@ your SRS>
 
 # Non-Functional Requirements
 
-2. <Name of Feature 1>
-  1. <Non-Functional Requirement 1>
-  2. <Non-Functional Requirement 2>
-  3. <And so on>
+2. Workout Log Display
+  1. The application shall display workout log comparisons in a user-friendly, organized, and clear manner.
+  2. The application shall give users the option to edit and revise workout logs from previous days when the “Edit” option is selected.
+  3. The application shall allow users to log a thorough and complete summary of a day's workout regardless of the workout’s length. 
+
