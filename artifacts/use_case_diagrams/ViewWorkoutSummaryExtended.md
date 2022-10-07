@@ -1,6 +1,6 @@
 **Use Case:   View Workout History**
 
-**Actors:**   User* (initiator), Program, Data File
+**Actors:**   User (initiator), Program, Data File
 
 **Description:**
   1) The user has the choice to edit their workout summary.
