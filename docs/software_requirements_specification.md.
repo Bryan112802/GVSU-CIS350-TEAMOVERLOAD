@@ -11,7 +11,7 @@ your SRS>
   3. R3: The program shall allow the user to input the amount of weight they are doing for each set of that exercise.
   4. R4: The program shall allow the user to input the amount of reps they are doing for each set of that exercise.
 2. View Workout Log History
-  1. R5: The program shall allow the user to cycle through previous workout logs
+  1. R1: The program shall allow the user to cycle through previous workout logs
 
 # Non-Functional Requirements
 
