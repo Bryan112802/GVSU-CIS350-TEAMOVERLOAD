@@ -6,9 +6,10 @@ your SRS>
 # Functional Requirements
 
 1. Exercise Logging
-  1. <Functional Requirement 1>
-  2. <Functional Requirement 2>
-  3. <And so on>
+  1. The program shall allow the user to select their exercise.
+  2. The program shall allow the user to input the amount of sets they are doing for that exercise.
+  3. The program shall allow the user to input the amount of weight they are doing for each set of that exercise.
+  4. The program shall allow the user to input the amount of reps they are doing for each set of that exercise.
 
 # Non-Functional Requirements
 
