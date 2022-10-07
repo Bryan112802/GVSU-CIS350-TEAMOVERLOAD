@@ -6,15 +6,17 @@ your SRS>
 # Functional Requirements
 
 1. Exercise Logging
-  1. The program shall allow the user to select their exercise.
-  2. The program shall allow the user to input the amount of sets they are doing for that exercise.
-  3. The program shall allow the user to input the amount of weight they are doing for each set of that exercise.
-  4. The program shall allow the user to input the amount of reps they are doing for each set of that exercise.
+  1. R1: The program shall allow the user to select their exercise.
+  2. R2: The program shall allow the user to input the amount of sets they are doing for that exercise.
+  3. R3: The program shall allow the user to input the amount of weight they are doing for each set of that exercise.
+  4. R4: The program shall allow the user to input the amount of reps they are doing for each set of that exercise.
+2. View Workout Log History
+  1. R5: The program shall allow the user to cycle through previous workout logs
 
 # Non-Functional Requirements
 
-2. Workout Log Display
-  1. The application shall display workout log comparisons in a user-friendly, organized, and clear manner.
-  2. The application shall give users the option to edit and revise workout logs from previous days when the “Edit” option is selected.
-  3. The application shall allow users to log a thorough and complete summary of a day's workout regardless of the workout’s length. 
+1. Workout Log Display
+  1. NR1: The application shall display workout log comparisons in a user-friendly, organized, and clear manner.
+  2. NR2: The application shall give users the option to edit and revise workout logs from previous days when the “Edit” option is selected.
+  3. NR3: The application shall allow users to log a thorough and complete summary of a day's workout regardless of the workout’s length. 
 
