@@ -2,7 +2,7 @@
 
 **Members present:** Bryan and Juan
 
-**Date:** 10/15
+**Date:** 10/15/2022
 
 **Time:** 8:37PM - 10:10PM
 
