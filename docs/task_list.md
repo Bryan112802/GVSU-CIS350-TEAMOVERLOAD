@@ -1,12 +1,12 @@
-**Name:** GUI
-**Description:** The final look and design of the project with different windows based on user prompts.
-**Time:** 2 ½ Months
-**Responsible:** Bryan and Juan
+**Name:** GUI. 
+**Description:** The final look and design of the project with different windows based on user prompts.  
+**Time:** 2 ½ Months. 
+**Responsible:** Bryan and Juan. 
 
-**Name:** Comparison
-**Description:** Feature that allows users to compare previous logs to show progress/regression.
-**Time:** 2-3 Weeks
-**Responsible:** Juan
+**Name:** Comparison. 
+**Description:** Feature that allows users to compare previous logs to show progress/regression.  
+**Time:** 2-3 Weeks. 
+**Responsible:** Juan. 
 
 **Name:** Skeleton Code
 **Description:** The basic layout for the project with proper abstractions and sections.
