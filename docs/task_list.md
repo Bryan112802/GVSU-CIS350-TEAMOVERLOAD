@@ -8,35 +8,35 @@
 **Time:** 2-3 Weeks. <br/>
 **Responsible:** Juan. <br/>
 
-**Name:** Skeleton Code
-**Description:** The basic layout for the project with proper abstractions and sections.
-**Time:** 1 Week
-**Responsible:** Bryan and Juan
+**Name:** Skeleton Code <br/>
+**Description:** The basic layout for the project with proper abstractions and sections. <br/>
+**Time:** 1 Week <br/>
+**Responsible:** Bryan and Juan <br/>
 
 
-**Name:** User-Input Logs
-**Description:** Ability to receive user input and save/format it as a log within a file. 
-**Time:** 1-2 Weeks
-**Responsible:** Bryan
+**Name:** User-Input Logs <br/>
+**Description:** Ability to receive user input and save/format it as a log within a file.  <br/>
+**Time:** 1-2 Weeks <br/>
+**Responsible:** Bryan <br/>
 
 
-**Name:** Gantt Chart
-**Description:** Chart that displays the layout of the project timeline
-**Time:** 5 Days
-**Responsible:** Bryan
+**Name:** Gantt Chart <br/>
+**Description:** Chart that displays the layout of the project timeline <br/>
+**Time:** 5 Days <br/>
+**Responsible:** Bryan <br/>
 
 
-**Name:** GUI Drawing
-**Description:** Drawing that shows the image we have in mind for the application.
-**Time:** 5 Days
-**Responsible:** Juan
+**Name:** GUI Drawing <br/>
+**Description:** Drawing that shows the image we have in mind for the application. <br/>
+**Time:** 5 Days <br/>
+**Responsible:** Juan <br/>
 
-**Name:** History Function
-**Description:** Function that allows user to check old logs from previous dates.
-**Time:** 3-4 Weeks
-**Responsible:** Juan
+**Name:** History Function <br/>
+**Description:** Function that allows user to check old logs from previous dates. <br/>
+**Time:** 3-4 Weeks <br/>
+**Responsible:** Juan <br/>
 
-**Name:** Testing
-**Description:** Testing of all functions and user-input
-**Time:** 2 1/2 months
-**Responsible:** Bryan and Juan
+**Name:** Testing <br/>
+**Description:** Testing of all functions and user-input <br/>
+**Time:** 2 1/2 months <br/>
+**Responsible:** Bryan and Juan <br/>
