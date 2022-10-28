@@ -17,18 +17,23 @@ public class Main {
 
         if (exerciseSelection == 1) {
             newLog.addWorkout(1);
+            System.out.println("You have selected squat!");
         }
         else if (exerciseSelection == 2) {
             newLog.addWorkout(2);
+            System.out.println("You have selected bench press!");
         }
         else if (exerciseSelection == 3) {
             newLog.addWorkout(3);
+            System.out.println("You have selected deadlift!");
         }
         else if (exerciseSelection == 4) {
             newLog.addWorkout(4);
+            System.out.println("You have selected snatch!");
         }
         else if (exerciseSelection == 5) {
             newLog.addWorkout(5);
+            System.out.println("You have selected clean and jerk!");
         }
         else {
             //make this throw exception
