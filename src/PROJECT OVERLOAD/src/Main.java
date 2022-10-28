@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -9,23 +10,25 @@ public class Main {
         System.out.println("    4) Snatch");
         System.out.println("    5) Clean and Jerk");
 
-        int exerciseSelection = 0;
+        WorkoutLog newLog = new WorkoutLog();
+
+        int exerciseSelection;
         exerciseSelection = scnr.nextInt();
 
         if (exerciseSelection == 1) {
-
+            newLog.addWorkout(1);
         }
         else if (exerciseSelection == 2) {
-
+            newLog.addWorkout(2);
         }
         else if (exerciseSelection == 3) {
-
+            newLog.addWorkout(3);
         }
         else if (exerciseSelection == 4) {
-
+            newLog.addWorkout(4);
         }
         else if (exerciseSelection == 5) {
-
+            newLog.addWorkout(5);
         }
         else {
             //make this throw exception
