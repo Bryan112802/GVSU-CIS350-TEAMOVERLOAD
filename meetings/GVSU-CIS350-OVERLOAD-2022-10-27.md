@@ -4,7 +4,7 @@
 
 **Date:** 10/27/2022
 
-**Time:** 7:11PM - 8:15PM
+**Time:** 7:11PM - 8:20PM
 
 **Discussion points:** <br/>
 * Out of Class Work 
