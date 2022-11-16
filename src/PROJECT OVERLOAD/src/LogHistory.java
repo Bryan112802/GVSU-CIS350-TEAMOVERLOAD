@@ -1,27 +1,20 @@
 import java.io.File;
 import java.io.IOException;
 
-
-
-
-
-
-
-
-
 public class LogHistory {
 
-
-    public LogHistory() {
-
-    }
-
     public static void initializeArray() {
-        if(new File("logHistory.txt").isFile()) {
-            //read to array
+        File file = new File("loghistory.txt");
+
+        if(file.isFile()) {
+            //read file
         }
         else {
-            File logHistory = new File("logHistory.txt");
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
