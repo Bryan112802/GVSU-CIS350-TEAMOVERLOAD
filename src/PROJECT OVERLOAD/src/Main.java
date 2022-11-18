@@ -1,8 +1,11 @@
 
+
+import java.io.*;
 import java.util.Scanner;
 
+
 public class Main extends LogHistory{
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner scnr = new Scanner(System.in);
 
         initializeArray();
@@ -22,30 +25,153 @@ public class Main extends LogHistory{
                 System.out.println("    4) Snatch");
                 System.out.println("    5) Clean and Jerk");
 
-                WorkoutLog newLog = new WorkoutLog();
-
-                int exerciseSelection;
+                int exerciseSelection = 0;
                 exerciseSelection = scnr.nextInt();
+                String exercise = "";
+
+                if(exerciseSelection == 1) {
+                    exercise = "Squat";
+                }
+                else if(exerciseSelection == 2) {
+                    exercise = "Bench Press";
+                }
+                else if(exerciseSelection == 3) {
+                    exercise = "Deadlift";
+                }
+                else if(exerciseSelection == 4) {
+                    exercise = "Snatch";
+                }
+                else if(exerciseSelection == 5) {
+                    exercise = "Clean and Jerk";
+                }
+
+
+                String dateSelection = "";
+                int setSelection = 0;
+                String weightrepSelection = "";
+                String data;
 
                 if (exerciseSelection == 1) {
-                    newLog.addWorkout(1);
                     System.out.println("You have selected squat!");
+                    System.out.println("Enter date.");
+                    dateSelection = scnr.next();
+                    System.out.println("Enter number of sets.");
+                    setSelection = scnr.nextInt();
+                    for(int i = 0; i < setSelection; i++) {
+                        System.out.println("Enter weight(lbs)/reps.");
+                        String wrTemp;
+                        wrTemp = scnr.next();
+                        weightrepSelection +=  wrTemp + " ";
+                    }
+                    data = dateSelection + "," + exercise + ","
+                            + String.valueOf(setSelection) + "," + weightrepSelection;
+                    WorkoutLog newLog = new WorkoutLog(data);
+                    history.add(newLog);
+
+
+                    FileWriter fWriter = new FileWriter(file, true);
+                    BufferedWriter bWriter = new BufferedWriter(fWriter);
+                    bWriter.write(data + "\n");
+                    bWriter.close();
+
                 }
                 else if (exerciseSelection == 2) {
-                    newLog.addWorkout(2);
+
                     System.out.println("You have selected bench press!");
+                    System.out.println("Enter date.");
+                    dateSelection = scnr.next();
+                    System.out.println("Enter number of sets.");
+                    setSelection = scnr.nextInt();
+                    for(int i = 0; i < setSelection; i++) {
+                        System.out.println("Enter weight(lbs)/reps.");
+                        String wrTemp;
+                        wrTemp = scnr.next();
+                        weightrepSelection +=  wrTemp + " ";
+                    }
+                    data = dateSelection + "," + exercise + ","
+                            + String.valueOf(setSelection) + "," + weightrepSelection;
+                    WorkoutLog newLog = new WorkoutLog(data);
+                    history.add(newLog);
+
+
+                    FileWriter fWriter = new FileWriter(file, true);
+                    BufferedWriter bWriter = new BufferedWriter(fWriter);
+                    bWriter.write(data + "\n");
+                    bWriter.close();
+
                 }
                 else if (exerciseSelection == 3) {
-                    newLog.addWorkout(3);
+
                     System.out.println("You have selected deadlift!");
+                    System.out.println("Enter date.");
+                    dateSelection = scnr.next();
+                    System.out.println("Enter number of sets.");
+                    setSelection = scnr.nextInt();
+                    for(int i = 0; i < setSelection; i++) {
+                        System.out.println("Enter weight(lbs)/reps.");
+                        String wrTemp;
+                        wrTemp = scnr.next();
+                        weightrepSelection +=  wrTemp + " ";
+                    }
+                    data = dateSelection + "," + exercise + ","
+                            + String.valueOf(setSelection) + "," + weightrepSelection;
+                    WorkoutLog newLog = new WorkoutLog(data);
+                    history.add(newLog);
+
+
+                    FileWriter fWriter = new FileWriter(file, true);
+                    BufferedWriter bWriter = new BufferedWriter(fWriter);
+                    bWriter.write(data + "\n");
+                    bWriter.close();
+
                 }
                 else if (exerciseSelection == 4) {
-                    newLog.addWorkout(4);
+
                     System.out.println("You have selected snatch!");
+                    System.out.println("Enter date.");
+                    dateSelection = scnr.next();
+                    System.out.println("Enter number of sets.");
+                    setSelection = scnr.nextInt();
+                    for(int i = 0; i < setSelection; i++) {
+                        System.out.println("Enter weight(lbs)/reps.");
+                        String wrTemp;
+                        wrTemp = scnr.next();
+                        weightrepSelection +=  wrTemp + " ";
+                    }
+                    data = dateSelection + "," + exercise + ","
+                            + String.valueOf(setSelection) + "," + weightrepSelection;
+                    WorkoutLog newLog = new WorkoutLog(data);
+                    history.add(newLog);
+
+                    FileWriter fWriter = new FileWriter(file, true);
+                    BufferedWriter bWriter = new BufferedWriter(fWriter);
+                    bWriter.write(data + "\n");
+                    bWriter.close();
+
                 }
                 else if (exerciseSelection == 5) {
-                    newLog.addWorkout(5);
+
                     System.out.println("You have selected clean and jerk!");
+                    System.out.println("Enter date.");
+                    dateSelection = scnr.next();
+                    System.out.println("Enter number of sets.");
+                    setSelection = scnr.nextInt();
+                    for(int i = 0; i < setSelection; i++) {
+                        System.out.println("Enter weight(lbs)/reps.");
+                        String wrTemp;
+                        wrTemp = scnr.next();
+                        weightrepSelection +=  wrTemp + " ";
+                    }
+                    data = dateSelection + "," + exercise + ","
+                            + String.valueOf(setSelection) + "," + weightrepSelection;
+                    WorkoutLog newLog = new WorkoutLog(data);
+                    history.add(newLog);
+
+                    FileWriter fWriter = new FileWriter(file, true);
+                    BufferedWriter bWriter = new BufferedWriter(fWriter);
+                    bWriter.write(data + "\n");
+                    bWriter.close();
+
                 }
                 else {
                     //make this throw exception
@@ -59,7 +185,5 @@ public class Main extends LogHistory{
 
 
     }
-}
 
-//11/10/22 Squat 10 5 50 50 50 50
-//11/11/22 PushUp Set: 4 Reps: 10/15 10/15 10/10 10/10
+}
