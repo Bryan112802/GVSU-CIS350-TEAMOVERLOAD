@@ -21,9 +21,7 @@ public class LogHistory extends WorkoutLog{
                     return;
                 }
                 Scanner scnr = new Scanner(fileByteStream);
-                if(scnr.next().equals("")) {
-                    return;
-                }
+
                 scnr.nextLine();
 
                 while(scnr.hasNext()) {
