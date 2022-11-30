@@ -58,10 +58,12 @@ public class Main extends LogHistory{
                     System.out.println("Enter number of sets.");
                     setSelection = scnr.nextInt();
                     for(int i = 0; i < setSelection; i++) {
-                        System.out.println("Enter weight(lbs)/reps.");
+                        System.out.println("Enter weight(lbs)");
                         String wrTemp;
                         wrTemp = scnr.next();
-                        weightrepSelection +=  wrTemp + " ";
+                        System.out.println("Enter reps");
+                        String repsTemp = scnr.next();
+                        weightrepSelection +=  wrTemp + " " + repsTemp + " ";
                     }
                     data = dateSelection + "," + exercise + ","
                             + String.valueOf(setSelection) + "," + weightrepSelection;
@@ -73,6 +75,9 @@ public class Main extends LogHistory{
                     BufferedWriter bWriter = new BufferedWriter(fWriter);
                     bWriter.write(data + "\n");
                     bWriter.close();
+                    returnToMenu();
+                    Scanner scnr2 = new Scanner(System.in);
+                    initSelection = scnr2.nextInt();
 
                 }
                 else if (exerciseSelection == 2) {
@@ -83,10 +88,12 @@ public class Main extends LogHistory{
                     System.out.println("Enter number of sets.");
                     setSelection = scnr.nextInt();
                     for(int i = 0; i < setSelection; i++) {
-                        System.out.println("Enter weight(lbs)/reps.");
+                        System.out.println("Enter weight(lbs)");
                         String wrTemp;
                         wrTemp = scnr.next();
-                        weightrepSelection +=  wrTemp + " ";
+                        System.out.println("Enter reps");
+                        String repsTemp = scnr.next();
+                        weightrepSelection +=  wrTemp + " " + repsTemp + " ";
                     }
                     data = dateSelection + "," + exercise + ","
                             + String.valueOf(setSelection) + "," + weightrepSelection;
@@ -98,6 +105,9 @@ public class Main extends LogHistory{
                     BufferedWriter bWriter = new BufferedWriter(fWriter);
                     bWriter.write(data + "\n");
                     bWriter.close();
+                    returnToMenu();
+                    Scanner scnr2 = new Scanner(System.in);
+                    initSelection = scnr2.nextInt();
 
                 }
                 else if (exerciseSelection == 3) {
@@ -108,10 +118,12 @@ public class Main extends LogHistory{
                     System.out.println("Enter number of sets.");
                     setSelection = scnr.nextInt();
                     for(int i = 0; i < setSelection; i++) {
-                        System.out.println("Enter weight(lbs)/reps.");
+                        System.out.println("Enter weight(lbs)");
                         String wrTemp;
                         wrTemp = scnr.next();
-                        weightrepSelection +=  wrTemp + " ";
+                        System.out.println("Enter reps");
+                        String repsTemp = scnr.next();
+                        weightrepSelection +=  wrTemp + " " + repsTemp + " ";
                     }
                     data = dateSelection + "," + exercise + ","
                             + String.valueOf(setSelection) + "," + weightrepSelection;
@@ -123,6 +135,9 @@ public class Main extends LogHistory{
                     BufferedWriter bWriter = new BufferedWriter(fWriter);
                     bWriter.write(data + "\n");
                     bWriter.close();
+                    returnToMenu();
+                    Scanner scnr2 = new Scanner(System.in);
+                    initSelection = scnr2.nextInt();
 
                 }
                 else if (exerciseSelection == 4) {
@@ -133,10 +148,12 @@ public class Main extends LogHistory{
                     System.out.println("Enter number of sets.");
                     setSelection = scnr.nextInt();
                     for(int i = 0; i < setSelection; i++) {
-                        System.out.println("Enter weight(lbs)/reps.");
+                        System.out.println("Enter weight(lbs)");
                         String wrTemp;
                         wrTemp = scnr.next();
-                        weightrepSelection +=  wrTemp + " ";
+                        System.out.println("Enter reps");
+                        String repsTemp = scnr.next();
+                        weightrepSelection +=  wrTemp + " " + repsTemp + " ";
                     }
                     data = dateSelection + "," + exercise + ","
                             + String.valueOf(setSelection) + "," + weightrepSelection;
@@ -147,6 +164,9 @@ public class Main extends LogHistory{
                     BufferedWriter bWriter = new BufferedWriter(fWriter);
                     bWriter.write(data + "\n");
                     bWriter.close();
+                    returnToMenu();
+                    Scanner scnr2 = new Scanner(System.in);
+                    initSelection = scnr2.nextInt();
 
                 }
                 else if (exerciseSelection == 5) {
@@ -157,10 +177,12 @@ public class Main extends LogHistory{
                     System.out.println("Enter number of sets.");
                     setSelection = scnr.nextInt();
                     for(int i = 0; i < setSelection; i++) {
-                        System.out.println("Enter weight(lbs)/reps.");
+                        System.out.println("Enter weight(lbs)");
                         String wrTemp;
                         wrTemp = scnr.next();
-                        weightrepSelection +=  wrTemp + " ";
+                        System.out.println("Enter reps");
+                        String repsTemp = scnr.next();
+                        weightrepSelection +=  wrTemp + " " + repsTemp + " ";
                     }
                     data = dateSelection + "," + exercise + ","
                             + String.valueOf(setSelection) + "," + weightrepSelection;
@@ -171,18 +193,40 @@ public class Main extends LogHistory{
                     BufferedWriter bWriter = new BufferedWriter(fWriter);
                     bWriter.write(data + "\n");
                     bWriter.close();
+                    returnToMenu();
+                    Scanner scnr2 = new Scanner(System.in);
+                    initSelection = scnr2.nextInt();
 
                 }
                 else {
                     //make this throw exception
                     System.out.println("Invalid Response");
+                    returnToMenu();
+                    Scanner scnr2 = new Scanner(System.in);
+                    initSelection = scnr2.nextInt();
                 }
 
 
             }
+            if (initSelection == 2) {
+                displayHistory();
+                System.out.println(history.size());
+                returnToMenu();
+                Scanner scnr2 = new Scanner(System.in);
+                initSelection = scnr2.nextInt();
+            }
         }
         while (initSelection != 0);
 
+
+    }
+
+    public static void returnToMenu() {
+        System.out.println("OVERLOAD");
+        System.out.println("Select a task: ");
+        System.out.println("    1) New Log");
+        System.out.println("    2) Workout History");
+        System.out.println("    0) Exit");
 
     }
 
