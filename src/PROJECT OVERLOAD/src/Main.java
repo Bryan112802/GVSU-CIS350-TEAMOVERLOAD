@@ -1,6 +1,7 @@
 
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -209,11 +210,40 @@ public class Main extends LogHistory{
 
             }
             if (initSelection == 2) {
-                displayHistory();
-                System.out.println(history.size());
-                returnToMenu();
-                Scanner scnr2 = new Scanner(System.in);
-                initSelection = scnr2.nextInt();
+                System.out.println("Select your task: ");
+                System.out.println("1) Print log history ");
+                System.out.println("2) Search log history ");
+                int histSel = scnr.nextInt();
+                if (histSel == 1){
+                    displayHistory();
+                    System.out.println(history.size());
+                    returnToMenu();
+                    Scanner scnr2 = new Scanner(System.in);
+                    initSelection = scnr2.nextInt();
+                }
+                else if (histSel == 2) {
+                    System.out.println("Enter date:");
+                    String dateSearch = scnr.next();
+                    ArrayList<WorkoutLog> temp;
+                    temp = searchDate(dateSearch);
+                    if (temp.isEmpty()) {
+                        System.out.println("No log found");
+                        returnToMenu();
+                        initSelection = scnr.nextInt();
+                    }
+                    else {
+                        for (int i = 0; i < temp.size(); i++) {
+                            System.out.println(temp.get(i).toString());
+                        }
+                        System.out.println(temp.size());
+                        returnToMenu();
+                        initSelection = scnr.nextInt();
+
+                    }
+
+
+
+                }
             }
         }
         while (initSelection != 0);

@@ -1,7 +1,42 @@
 
 import java.util.*;
 
+import static java.lang.Integer.parseInt;
+
+
 public class WorkoutLog {
+    /*public int compareTo(WorkoutLog o) {
+        String delim = "/";
+        String[]tokens = (this.date.split(delim));
+        int month = parseInt(tokens[0]);
+        int day = parseInt(tokens[1]);
+        int year = parseInt(tokens[2]);
+
+        String[]tokens2 = ((o.getDate()).split(delim));
+        int month2 = parseInt(tokens[0]);
+        int day2 = parseInt(tokens[1]);
+        int year2 = parseInt(tokens[2]);
+
+        if(tokens == tokens2) {
+            return 0;
+        }
+
+        if (year < year2) {
+            return -1;
+        }
+        else if (month < month2) {
+            return -1;
+        }
+        else if (day < day2) {
+            return -1;
+        }
+        else {
+            return 1;
+        }
+
+
+    } */
+
     public WorkoutLog() {
 
     }
@@ -23,7 +58,7 @@ public class WorkoutLog {
         String[] tokens = data.split(deliminator);
         this.date = tokens[0];
         this.workout = tokens[1];
-        this.sets = Integer.parseInt(tokens[2]);
+        this.sets = parseInt(tokens[2]);
         this.repWeight = tokens[3];
     }
 
@@ -73,6 +108,18 @@ public class WorkoutLog {
 
     public void addDate(String date) {
         this.date = date;
+    }
+
+    public String toString() {
+        String delim = " ";
+        String[]tokens = repWeight.split(delim);
+        String repWeight = "";
+        int repTr2 = 0;
+        for (int i = 0; i < getSets(); i++){
+            repWeight += "Set " + (i+1) + ": " + tokens[repTr2] + " lbs for " + tokens[repTr2+1] + " reps" + "\n";
+            repTr2 += 2;
+        }
+        return "Date: " + this.getDate() + "\n" + "Exercise: " + this.getWorkout() + "\n" + repWeight;
     }
 
 

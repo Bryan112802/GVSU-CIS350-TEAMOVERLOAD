@@ -22,7 +22,6 @@ public class LogHistory extends WorkoutLog{
                 }
                 Scanner scnr = new Scanner(fileByteStream);
 
-                scnr.nextLine();
 
                 while(scnr.hasNext()) {
                     // reads each record of the file
@@ -46,8 +45,15 @@ public class LogHistory extends WorkoutLog{
         }
     }
 
-
-
+    public static ArrayList<WorkoutLog> searchDate(String date) {
+        ArrayList<WorkoutLog> temp = new ArrayList<WorkoutLog>();
+        for (int i = 0; i < history.size(); i++) {
+            if (history.get(i).getDate().equals(date)) {
+                temp.add(history.get(i));
+            }
+        }
+        return temp;
+    }
     public static void displayHistory() {
         System.out.println("Your Log History");
         System.out.println();
@@ -60,7 +66,6 @@ public class LogHistory extends WorkoutLog{
                 String[]tokens = ((history.get(i)).getRepWeight()).split(delim);
                 System.out.println("Set " + (j+1) + ": " + tokens[repTr] + " lbs for " + tokens[repTr+1] + " reps");
                 repTr += 2;
-
             }
             System.out.println();
         }
