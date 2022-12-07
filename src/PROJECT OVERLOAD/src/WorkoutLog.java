@@ -5,41 +5,6 @@ import static java.lang.Integer.parseInt;
 
 
 public class WorkoutLog {
-    /*public int compareTo(WorkoutLog o) {
-        String delim = "/";
-        String[]tokens = (this.date.split(delim));
-        int month = parseInt(tokens[0]);
-        int day = parseInt(tokens[1]);
-        int year = parseInt(tokens[2]);
-
-        String[]tokens2 = ((o.getDate()).split(delim));
-        int month2 = parseInt(tokens[0]);
-        int day2 = parseInt(tokens[1]);
-        int year2 = parseInt(tokens[2]);
-
-        if(tokens == tokens2) {
-            return 0;
-        }
-
-        if (year < year2) {
-            return -1;
-        }
-        else if (month < month2) {
-            return -1;
-        }
-        else if (day < day2) {
-            return -1;
-        }
-        else {
-            return 1;
-        }
-
-
-    } */
-
-    public WorkoutLog() {
-
-    }
 
     private ArrayList<String> workouts;
 
@@ -51,7 +16,60 @@ public class WorkoutLog {
 
     private String repWeight = "";
 
+    private static final int[] MONTH_DAYS = {31, 28, 31, 30, 31, 30, 31, 31,
+            30, 31, 30, 31};
 
+    private static boolean isLeapYear(int year) {
+        if(year % 4 != 0) {
+            return false;
+        }
+        else if(year % 400 == 0) {
+            return true;
+        }
+        //checks to make sure not turn of century
+        else if(year % 100 == 0) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    public static boolean isValidDate(String dateCheck) {
+        String delim = "/";
+        String[]tokens = (dateCheck.split(delim));
+        int month = parseInt(tokens[0]);
+        int day = parseInt(tokens[1]);
+        int year = parseInt(tokens[2]);
+
+        if(tokens.length != 3) {
+            return false;
+        }
+        else if (!isLeapYear(year) && month == 2 && day > 28
+                || isLeapYear(year) && month == 2 && day > 29) {
+            return false;
+        }
+        else if (month > 12 || month < 1) {
+            return false;
+        }
+        else if (day > 31 || day < 1) {
+            return false;
+        }
+        else if (year < 0) {
+            return false;
+        }
+        else if (!isLeapYear(year) && day > MONTH_DAYS[month - 1]) {
+            return false;
+        }
+        else {
+            return true;
+        }
+
+    }
+
+    public WorkoutLog() {
+
+    }
 
     public WorkoutLog(String data) { // class instantiated
         String deliminator = "[,]";
@@ -121,10 +139,5 @@ public class WorkoutLog {
         }
         return "Date: " + this.getDate() + "\n" + "Exercise: " + this.getWorkout() + "\n" + repWeight;
     }
-
-
-
-
-
 
 }

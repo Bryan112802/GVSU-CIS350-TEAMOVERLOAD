@@ -4,9 +4,12 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static java.lang.Integer.parseInt;
+
 
 public class Main extends LogHistory{
     public static void main(String[] args) throws IOException {
+
         Scanner scnr = new Scanner(System.in);
 
         initializeArray();
@@ -56,16 +59,28 @@ public class Main extends LogHistory{
                     System.out.println("You have selected squat!");
                     System.out.println("Enter date.");
                     dateSelection = scnr.next();
+                    if (!isValidDate(dateSelection)) {
+                        System.out.println("Invalid Date");
+                        break;
+                    }
                     System.out.println("Enter number of sets.");
                     setSelection = scnr.nextInt();
+                    if (setSelection < 1) {
+                        break;
+                    }
                     for(int i = 0; i < setSelection; i++) {
                         System.out.println("Enter weight(lbs)");
                         String wrTemp;
                         wrTemp = scnr.next();
                         System.out.println("Enter reps");
                         String repsTemp = scnr.next();
+                        if (parseInt(repsTemp) < 1 || parseInt(wrTemp) < 0) {
+                            System.out.println("Invalid reps or weight");
+                            System.exit(0);
+                        }
                         weightrepSelection +=  wrTemp + " " + repsTemp + " ";
                     }
+
                     data = dateSelection + "," + exercise + ","
                             + String.valueOf(setSelection) + "," + weightrepSelection;
                     WorkoutLog newLog = new WorkoutLog(data);
@@ -86,14 +101,25 @@ public class Main extends LogHistory{
                     System.out.println("You have selected bench press!");
                     System.out.println("Enter date.");
                     dateSelection = scnr.next();
+                    if (!isValidDate(dateSelection)) {
+                        System.out.println("Invalid Date");
+                        break;
+                    }
                     System.out.println("Enter number of sets.");
                     setSelection = scnr.nextInt();
+                    if (setSelection < 1) {
+                        break;
+                    }
                     for(int i = 0; i < setSelection; i++) {
                         System.out.println("Enter weight(lbs)");
                         String wrTemp;
                         wrTemp = scnr.next();
                         System.out.println("Enter reps");
                         String repsTemp = scnr.next();
+                        if (parseInt(repsTemp) < 1 || parseInt(wrTemp) < 0) {
+                            System.out.println("Invalid reps or weight");
+                            System.exit(0);
+                        }
                         weightrepSelection +=  wrTemp + " " + repsTemp + " ";
                     }
                     data = dateSelection + "," + exercise + ","
@@ -116,14 +142,25 @@ public class Main extends LogHistory{
                     System.out.println("You have selected deadlift!");
                     System.out.println("Enter date.");
                     dateSelection = scnr.next();
+                    if (!isValidDate(dateSelection)) {
+                        System.out.println("Invalid Date");
+                        break;
+                    }
                     System.out.println("Enter number of sets.");
                     setSelection = scnr.nextInt();
+                    if (setSelection < 1) {
+                        break;
+                    }
                     for(int i = 0; i < setSelection; i++) {
                         System.out.println("Enter weight(lbs)");
                         String wrTemp;
                         wrTemp = scnr.next();
                         System.out.println("Enter reps");
                         String repsTemp = scnr.next();
+                        if (parseInt(repsTemp) < 1 || parseInt(wrTemp) < 0) {
+                            System.out.println("Invalid reps or weight");
+                            System.exit(0);
+                        }
                         weightrepSelection +=  wrTemp + " " + repsTemp + " ";
                     }
                     data = dateSelection + "," + exercise + ","
@@ -146,14 +183,26 @@ public class Main extends LogHistory{
                     System.out.println("You have selected snatch!");
                     System.out.println("Enter date.");
                     dateSelection = scnr.next();
+
+                    if (!isValidDate(dateSelection)) {
+                        System.out.println("Invalid Date");
+                        break;
+                    }
                     System.out.println("Enter number of sets.");
                     setSelection = scnr.nextInt();
+                    if (setSelection < 1) {
+                        break;
+                    }
                     for(int i = 0; i < setSelection; i++) {
                         System.out.println("Enter weight(lbs)");
                         String wrTemp;
                         wrTemp = scnr.next();
                         System.out.println("Enter reps");
                         String repsTemp = scnr.next();
+                        if (parseInt(repsTemp) < 1 || parseInt(wrTemp) < 0) {
+                            System.out.println("Invalid reps or weight");
+                            System.exit(0);
+                        }
                         weightrepSelection +=  wrTemp + " " + repsTemp + " ";
                     }
                     data = dateSelection + "," + exercise + ","
@@ -175,14 +224,25 @@ public class Main extends LogHistory{
                     System.out.println("You have selected clean and jerk!");
                     System.out.println("Enter date.");
                     dateSelection = scnr.next();
+                    if (!isValidDate(dateSelection)) {
+                        System.out.println("Invalid Date");
+                        break;
+                    }
                     System.out.println("Enter number of sets.");
                     setSelection = scnr.nextInt();
+                    if (setSelection < 1) {
+                        break;
+                    }
                     for(int i = 0; i < setSelection; i++) {
                         System.out.println("Enter weight(lbs)");
                         String wrTemp;
                         wrTemp = scnr.next();
                         System.out.println("Enter reps");
                         String repsTemp = scnr.next();
+                        if (parseInt(repsTemp) < 1 || parseInt(wrTemp) < 0) {
+                            System.out.println("Invalid reps or weight");
+                            System.exit(0);
+                        }
                         weightrepSelection +=  wrTemp + " " + repsTemp + " ";
                     }
                     data = dateSelection + "," + exercise + ","
