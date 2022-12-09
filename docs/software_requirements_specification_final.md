@@ -1,0 +1,52 @@
+# Overview
+
+This doccument is to log and create objectives that we wish to accomplish through the Overload application project.
+These requirements help envision and express the type of project we wish to create and give us the programmers organization and logging of our features. 
+
+# Functional Requirements
+
+1. Exercise Logging
+  R1: The program shall allow the user to select their exercise.
+  R2: The program shall allow the user to input the date of their excersise.
+  R3: The program shall allow the user to input the amount of sets they are doing for that exercise.
+  R4: The program shall allow the user to input the amount of weight they are doing for each set of that exercise.
+  R5: The program shall allow the user to input the amount of reps they are doing for each set of that exercise.
+  
+2. Display Workout Log History
+  R1: The program shall allow the user to view previous workout logs.
+  R2: The program shall allow the user initiate this function from the main menu.
+  R3: The program shall format the display to be spaced and easily interpreted by the user.
+  R4: The program shall get all log history from an array that holds and collects all logs recorded.
+  R5: The program shall display no log exists if no logs have been created.
+  
+3. Search Workout Log History
+  R1: The program shall allow the user to input a date that the user wants to search for.
+  R2: The program shall display the log history for the date inputted.
+  R3: The program shall allow the user to select the search option from the menu.
+  R4: The program shall not allow invalid user inputs for dates.
+  R5: The program shall display no log found when the user inputs a date that no log exists for.
+   
+
+# Non-Functional Requirements
+
+1. Workout Log Display
+  NR1: The application shall get all log data being displayed from the loghistory.txt file.
+  NR2: The application shall display the log history within milliseconds of being user prompted.
+  NR3: The application shall handle as many logs as the user's computer storage permits.
+  NR4: The application shall format a user-friendly digestable view for all logs and log creation.
+  NR5: The application shall TBD
+  
+2. Menu
+  NR1: The application shall display a user-friendly main menu upon being launched.
+  NR2: The application shall provide users with inputs to initiate application functions.
+  NR3: The application shall display the main menu once again upon a successful creation of a workout log.
+  NR4: The application shall exit the program when user requests from any menu with a key input.
+  NR5: The application shall display new menus upon key inputs and function initiation.
+  
+3. Application Launch
+  NR1: The application shall launch and operate approriately on Windows and MacOS devices.
+  NR2: The application shall handle a single user locally on their device.
+  NR3: The application shall laucnh quickly and start up within a few seconds.
+  NR4: The application shall check for loghistory.txt and create if not existing upon launch.
+  NR5: The application shall remain active until the user initiates an exit or force shuts down the program.
+  
