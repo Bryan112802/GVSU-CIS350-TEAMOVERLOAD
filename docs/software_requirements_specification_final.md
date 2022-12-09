@@ -43,29 +43,29 @@ These requirements help envision and express the type of project we wish to crea
 ### Workout Log Display
 | ID | Requirement |
 | :-------------: | :----------: |
-| NR1 | The application shall get all log data being displayed from the loghistory.txt file.|
-| NR2 | The application shall display the log history within milliseconds of being user prompted.|
-| NR3 | The application shall handle as many logs as the user's computer storage permits.|
-| NR4 | The application shall format a user-friendly digestable view for all logs and log creation.|
-| NR5 | The application shall continue to display the log history in a reasonable amount of time as the size of the file increases |
+| NFR1 | The application shall get all log data being displayed from the loghistory.txt file.|
+| NFR2 | The application shall display the log history within milliseconds of being user prompted.|
+| NFR3 | The application shall handle as many logs as the user's computer storage permits.|
+| NFR4 | The application shall format a user-friendly digestable view for all logs and log creation.|
+| NFR5 | The application shall continue to display the log history in a reasonable amount of time as the size of the file increases |
   
 ### Menu
 | ID | Requirement |
 | :-------------: | :----------: |
-| NR1 | The application shall display a user-friendly main menu upon being launched.|
-| NR2 | The application shall provide users with inputs to initiate application functions.|
-| NR3 | The application shall display the main menu once again upon a successful creation of a workout log.|
-| NR4 | The application shall exit the program when user requests from any menu with a key input.|
-| NR5 | The application shall display new menus upon key inputs and function initiation.|
+| NFR1 | The application shall display a user-friendly main menu upon being launched.|
+| NFR2 | The application shall provide users with inputs to initiate application functions.|
+| NFR3 | The application shall display the main menu once again upon a successful creation of a workout log.|
+| NFR4 | The application shall exit the program when user requests from any menu with a key input.|
+| NFR5 | The application shall display new menus upon key inputs and function initiation.|
   
 ### Application Launch
 | ID | Requirement |
 | :-------------: | :----------: |
-| NR1 | The application shall launch and operate approriately on Windows and MacOS devices.|
-| NR2 | The application shall handle a single user locally on their device.|
-| NR3 | The application shall laucnh quickly and start up within a few seconds.|
-| NR4 | The application shall check for loghistory.txt and create if not existing upon launch.|
-| NR5 | The application shall remain active until the user initiates an exit or force shuts down the program.|
+| NFR1 | The application shall launch and operate approriately on Windows and MacOS devices.|
+| NFR2 | The application shall handle a single user locally on their device.|
+| NFR3 | The application shall laucnh quickly and start up within a few seconds.|
+| NFR4 | The application shall check for loghistory.txt and create if not existing upon launch.|
+| NFR5 | The application shall remain active until the user initiates an exit or force shuts down the program.|
 <br>
 
 # Software Artifacts
