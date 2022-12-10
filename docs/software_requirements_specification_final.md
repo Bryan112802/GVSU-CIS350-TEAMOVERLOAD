@@ -69,9 +69,15 @@ These requirements help envision and express the type of project we wish to crea
 <br>
 
 # Software Artifacts
-|[Use Case Diagrams](https://github.com/Bryan112802/GVSU-CIS350-TEAMOVERLOAD/tree/master/artifacts/use_case_diagrams)|
+* [Use Case for View Workout Summary](https://github.com/Bryan112802/GVSU-CIS350-TEAMOVERLOAD/blob/master/artifacts/use_case_diagrams/ViewWorkoutSummary.pdf)
 
-|[Gantt Chart](https://github.com/Bryan112802/GVSU-CIS350-TEAMOVERLOAD/blob/master/docs/gantt-chart.pdf)|
+* [Extended Use Case for View Workout Summary](https://github.com/Bryan112802/GVSU-CIS350-TEAMOVERLOAD/blob/master/artifacts/use_case_diagrams/ViewWorkoutSummaryExtended.md)
 
-|[Proposal](https://github.com/Bryan112802/GVSU-CIS350-TEAMOVERLOAD/blob/master/docs/proposal-template.md)|
+* [Use Case for Display](https://github.com/Bryan112802/GVSU-CIS350-TEAMOVERLOAD/blob/master/artifacts/use_case_diagrams/display.pdf)
+
+* [Use Case for Workout Logging](https://github.com/Bryan112802/GVSU-CIS350-TEAMOVERLOAD/blob/master/artifacts/use_case_diagrams/workout_logging.drawio.pdf)
+
+* [Gantt Chart](https://github.com/Bryan112802/GVSU-CIS350-TEAMOVERLOAD/blob/master/docs/gantt-chart.pdf)
+
+* [Proposal](https://github.com/Bryan112802/GVSU-CIS350-TEAMOVERLOAD/blob/master/docs/proposal-template.md)
 
