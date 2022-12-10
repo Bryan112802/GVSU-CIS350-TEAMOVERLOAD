@@ -55,19 +55,24 @@ public class LogHistory extends WorkoutLog{
         return temp;
     }
     public static void displayHistory() {
-        System.out.println("Your Log History");
-        System.out.println();
-        for (int i = 0; i < history.size(); i++) {
-            System.out.println("Date: " + (history.get(i)).getDate());
-            System.out.println("Exercise: " + (history.get(i)).getWorkout());
-            int repTr = 0;
-            for (int j = 0; j < history.get(i).getSets(); j++){
-                String delim = " ";
-                String[]tokens = ((history.get(i)).getRepWeight()).split(delim);
-                System.out.println("Set " + (j+1) + ": " + tokens[repTr] + " lbs for " + tokens[repTr+1] + " reps");
-                repTr += 2;
-            }
+        if (history.size() == 0){
+            System.out.println("Your Log History");
+            System.out.println("No logs exists");
+        } else {
+            System.out.println("Your Log History");
             System.out.println();
+            for (int i = 0; i < history.size(); i++) {
+                System.out.println("Date: " + (history.get(i)).getDate());
+                System.out.println("Exercise: " + (history.get(i)).getWorkout());
+                int repTr = 0;
+                for (int j = 0; j < history.get(i).getSets(); j++) {
+                    String delim = " ";
+                    String[] tokens = ((history.get(i)).getRepWeight()).split(delim);
+                    System.out.println("Set " + (j + 1) + ": " + tokens[repTr] + " lbs for " + tokens[repTr + 1] + " reps");
+                    repTr += 2;
+                }
+                System.out.println();
+            }
         }
 
     }

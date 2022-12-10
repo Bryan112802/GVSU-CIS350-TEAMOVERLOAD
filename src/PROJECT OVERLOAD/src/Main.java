@@ -276,7 +276,6 @@ public class Main extends LogHistory{
                 int histSel = scnr.nextInt();
                 if (histSel == 1){
                     displayHistory();
-                    System.out.println(history.size());
                     returnToMenu();
                     Scanner scnr2 = new Scanner(System.in);
                     initSelection = scnr2.nextInt();
@@ -295,7 +294,7 @@ public class Main extends LogHistory{
                         for (int i = 0; i < temp.size(); i++) {
                             System.out.println(temp.get(i).toString());
                         }
-                        System.out.println(temp.size());
+
                         returnToMenu();
                         initSelection = scnr.nextInt();
 
