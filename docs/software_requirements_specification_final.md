@@ -69,4 +69,9 @@ These requirements help envision and express the type of project we wish to crea
 <br>
 
 # Software Artifacts
+|[Use Case Diagrams](https://github.com/Bryan112802/GVSU-CIS350-TEAMOVERLOAD/tree/master/artifacts/use_case_diagrams)|
+
+|[Gantt Chart](https://github.com/Bryan112802/GVSU-CIS350-TEAMOVERLOAD/blob/master/docs/gantt-chart.pdf)|
+
+|[Proposal](https://github.com/Bryan112802/GVSU-CIS350-TEAMOVERLOAD/blob/master/docs/proposal-template.md)|
 
