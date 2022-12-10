@@ -47,7 +47,7 @@ These requirements help envision and express the type of project we wish to crea
 | NFR2 | The application shall display the log history within milliseconds of being prompted.|
 | NFR3 | The application shall handle as many logs as the user's computer storage permits.|
 | NFR4 | The application shall format a user-friendly digestable view for all logs and log creation.|
-| NFR5 | The application shall continue to display the log history in a reasonable amount of time as the size of the file increases |
+| NFR5 | The application shall continue to display the log history in a reasonable amount of time as the size of the file increases.|
   
 ### Menu
 | ID | Requirement |
@@ -63,8 +63,8 @@ These requirements help envision and express the type of project we wish to crea
 | :-------------: | :----------: |
 | NFR1 | The application shall launch and operate appropriately on Windows and MacOS devices.|
 | NFR2 | The application shall handle a single user locally on their device.|
-| NFR3 | The application shall laucnh quickly and start up within a few seconds.|
-| NFR4 | The application shall check for loghistory.txt and create if not existing upon launch.|
+| NFR3 | The application shall launch quickly and start up within a few seconds.|
+| NFR4 | The application shall check for loghistory.txt and create it if it does not exist upon launch.|
 | NFR5 | The application shall remain active until the user initiates an exit or force shuts down the program.|
 <br>
 
