@@ -1,6 +1,6 @@
 # Overview
 
-This doccument is to log and create objectives that we wish to accomplish through the Overload application project.
+This document is to log and create objectives that we wish to accomplish through the Overload application project.
 These requirements help envision and express the type of project we wish to create and give us the programmers organization and logging of our features. <br>
 <br>
 # Software Requirements 
@@ -44,7 +44,7 @@ These requirements help envision and express the type of project we wish to crea
 | ID | Requirement |
 | :-------------: | :----------: |
 | NFR1 | The application shall get all log data being displayed from the loghistory.txt file.|
-| NFR2 | The application shall display the log history within milliseconds of being user prompted.|
+| NFR2 | The application shall display the log history within milliseconds of being prompted.|
 | NFR3 | The application shall handle as many logs as the user's computer storage permits.|
 | NFR4 | The application shall format a user-friendly digestable view for all logs and log creation.|
 | NFR5 | The application shall continue to display the log history in a reasonable amount of time as the size of the file increases |
@@ -55,13 +55,13 @@ These requirements help envision and express the type of project we wish to crea
 | NFR1 | The application shall display a user-friendly main menu upon being launched.|
 | NFR2 | The application shall provide users with inputs to initiate application functions.|
 | NFR3 | The application shall display the main menu once again upon a successful creation of a workout log.|
-| NFR4 | The application shall exit the program when user requests from any menu with a key input.|
+| NFR4 | The application shall exit the program when the user requests from any menu with a key input.|
 | NFR5 | The application shall display new menus upon key inputs and function initiation.|
   
 ### Application Launch
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR1 | The application shall launch and operate approriately on Windows and MacOS devices.|
+| NFR1 | The application shall launch and operate appropriately on Windows and MacOS devices.|
 | NFR2 | The application shall handle a single user locally on their device.|
 | NFR3 | The application shall laucnh quickly and start up within a few seconds.|
 | NFR4 | The application shall check for loghistory.txt and create if not existing upon launch.|
